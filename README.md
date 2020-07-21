@@ -8,4 +8,4 @@ From [hoanhan101/ultimate-go](https://github.com/hoanhan101/ultimate-go), [quii/
 + Struct: [Initialization | Name type vs Anonymous type](/ultimatego/language/struct.go)
 
 #### learn-go-with-tests learning record
-+ [Hello, World](/learngowithtests/hello)
++ [Hello, World](/learngowithtests/hello) - Declaring variables, constants, if/else statements, switch, write your first go program and write your first test. Sub-test syntax and closures.
