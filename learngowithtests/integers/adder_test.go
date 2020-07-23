@@ -22,10 +22,15 @@ func ExampleAdd() {
 	// Output: 6
 }
 
-// go test -v
-// === RUN   TestAddr
-// --- PASS: TestAddr (0.00s)
-// === RUN   ExampleAdd
-// --- PASS: ExampleAdd (0.00s)
-// PASS
-// ok      learngowithtests/integers       0.172s
+/**
+
+go test -v
+=== RUN   TestAddr
+--- PASS: TestAddr (0.00s)
+=== RUN   ExampleAdd
+--- PASS: ExampleAdd (0.00s)
+PASS
+ok      learngowithtests/integers       0.172s
+
+ */
+
