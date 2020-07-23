@@ -6,6 +6,9 @@ From [quii/learn-go-with-tests](https://github.com/quii/learn-go-with-tests), [h
 + [Integers](/learngowithtests/integers) - Further Explore function declaration syntax and learn new ways to improve the documentation of your code.
 + [Iteration](/learngowithtests/iteration) - Learn about `for` and benchmarking.
 + [Arrays and slices](/learngowithtests/arraysandslices) - Learn about arrays, slices, `len`, varargs, `range` and test coverage.
++ [Structs, methods & interfaces](/learngowithtests/structsmethodsinterfaces) - Learn about `struct`, methods, `interface` and table driven tests.
+
+
 
 #### ultimate-go learning record
 + variable: [Built-in types | Zero value concept | Initialization | Conversion vs Casting](/ultimatego/language/variable.go)
