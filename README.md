@@ -7,7 +7,7 @@ From [quii/learn-go-with-tests](https://github.com/quii/learn-go-with-tests), [h
 + [Iteration](/learngowithtests/iteration) - Learn about `for` and benchmarking.
 + [Arrays and slices](/learngowithtests/arraysandslices) - Learn about arrays, slices, `len`, varargs, `range` and test coverage.
 + [Structs, methods & interfaces](/learngowithtests/structsmethodsinterfaces) - Learn about `struct`, methods, `interface` and table driven tests.
-
++ [Pointers & errors](/learngowithtests/pointererror) - Learn about pointers and errors. 
 
 
 #### ultimate-go learning record
