@@ -1,21 +1,30 @@
 package pointererror
 
 import (
-	"fmt"
-	"testing"
+    "testing"
 )
 
 func TestWallet(t *testing.T) {
-	wallet := Wallet{}
-	wallet.Deposit(10)
 
-	got := wallet.Balance()
+    assertBalance := func(t *testing.T, wallet Wallet, want Bitcoin) {
+        t.Helper()
+        got := wallet.Balance()
 
-	fmt.Printf("address of balance in test is %v \n", &wallet.balance)
+        if got != want {
+            t.Errorf("got %s want %s", got, want)
+        }
+    }
 
-	want := 10
+    t.Run("Deposit", func(t *testing.T) {
+        wallet := Wallet{}
+        // To make Bitcoin you just use the syntax Bitcoin(10).
+        wallet.Deposit(Bitcoin(10))
+        assertBalance(t, wallet, Bitcoin(10))
+    })
 
-	if got != want {
-		t.Errorf("got %d want %d", got, want)
-	}
+    t.Run("Withdraw", func(t *testing.T) {
+        wallet := Wallet{balance: Bitcoin(20)}
+        wallet.Withdraw(Bitcoin(10))
+        assertBalance(t, wallet, Bitcoin(10))
+    })
 }
