@@ -11,11 +11,11 @@ const french = "French"
 
 // we've added another keyword string in the definition. This means this function returns a string.
 func Hello(name string, language string) string {
-	if name == "" {
-		name = "World"
-	}
+    if name == "" {
+        name = "World"
+    }
 
-	return greetingPrefix(language) + name
+    return greetingPrefix(language) + name
 }
 
 // In our function signature we have made a named return value (prefix string).
@@ -26,17 +26,17 @@ func Hello(name string, language string) string {
 // The function name starts with a lowercase letter. In Go public functions start with a capital letter and private ones
 // start with a lowercase. We don't want the internals of our algorithm to be exposed to the world, so we made this function private.
 func greetingPrefix(language string) (prefix string) {
-	switch language {
-	case french:
-		prefix = frenchHelloPrefix
-	case spaishHelloProfix:
-		prefix = spaishHelloProfix
-	default:
-		prefix = englishHelloPrefix
-	}
-	return
+    switch language {
+    case french:
+        prefix = frenchHelloPrefix
+    case spaishHelloProfix:
+        prefix = spaishHelloProfix
+    default:
+        prefix = englishHelloPrefix
+    }
+    return
 }
 
 func main()  {
-	fmt.Println(Hello("Chirs", ""))
+    fmt.Println(Hello("Chirs", ""))
 }
